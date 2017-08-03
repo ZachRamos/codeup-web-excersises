@@ -1,4 +1,4 @@
-h1 {
+header {
     color: purple;
     text-align: center;
     background-image: url("../img/skyscraper.png")
@@ -15,8 +15,12 @@ body {
     font-family: 'vollkorn', serif;
 }
 
-ul {
-    list-style: circle;
+ul, ol {
+    list-style: none;
+}
+
+li {
+    text-align: match-parent;
 }
 
 table, th, td {
@@ -41,4 +45,12 @@ a:hover {
 }
 a:active {
     color: purple;
+}
+
+#section1 {
+    position:relative;
+    border: 3px solid black;
+    width: 400px;
+    text-align: center;
+    margin: auto;
 }
