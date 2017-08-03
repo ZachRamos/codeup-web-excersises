@@ -1,0 +1,23 @@
+body{
+    background-image: url("../img/grid.png");
+    padding: 70px 0;
+}
+
+
+#first{
+    font-size: 60px;
+    border-style: solid;
+
+}
+
+.center{
+    text-align: center;
+    color: limegreen;
+}
+
+.login{
+    width: 200px;
+    height: 15px;
+
+}
+
