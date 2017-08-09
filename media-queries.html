@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Media Queries</title>
-    <link rel="stylesheet" href="css/media-queries.css">
     <link rel="stylesheet" href="css/grid-layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="alert-info hidden-on-mobile">
-        <a href="#main">Skip to main content</a>
+<div class="container">
+    <div class="row">
+        <div class="column one">
+            <div class="alert-info hidden-on-mobile">
+                <a href="#main">Skip to main content</a>
+            </div>
+        </div>
     </div>
         <div class="row">
-            <div class="column one-third">
+            <div class="column column-one-half one">
                 <h1>Company</h1>
             </div>
-            <div class="column one-third"></div>
-            <div class="column one-third">
+            <div class="column column-one-half one">
                 <nav>
                     <ul class="nav-links">
                         <li><a href="#">Home</a></li>
@@ -28,21 +32,21 @@
             </div>
         </div>
     <div class="row">
-        <div class="column column-one-half">
+        <div class="column column-one-half one">
             <div class="header-img">
                 <img src="http://lorempixel.com/g/900/400" alt="">
             </div>
         </div>
-        <div class="column column-one-half"></div>
+        <div class="column column-one-half one"></div>
     </div>
     <div class="row">
-        <div class="column two-third">
+        <div class="column two-third one">
             <section id="main" class="main">
                 <h2>Main Section</h2>
                 <p>Amet lorem accusantium maxime quis iusto. Sit aliquid quidem at animi commodi, iusto harum, non. Accusantium sequi consectetur deleniti soluta tempora. Maxime maiores blanditiis veritatis vitae amet maiores sapiente in?</p>
             </section>
         </div>
-        <div class="column one-third">
+        <div class="column one-third one">
             <section class="sub-section">
                 <h2>Sub-section</h2>
                 <p>Amet optio quidem voluptatum neque esse at saepe, reiciendis quaerat architecto unde minima aspernatur harum cum totam non amet soluta. Ea quae odio harum magni ab vitae tenetur. Itaque numquam!</p>
@@ -60,5 +64,6 @@
             </div>
         </div>
     </footer>
+</div>
 </body>
 </html>

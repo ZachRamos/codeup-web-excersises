@@ -9,7 +9,6 @@
 
     .nav-links li {
         list-style: none;
-        float: left;
         text-align: right;
         display: inline-block;
         margin: 40px 5px;
@@ -22,17 +21,6 @@
         margin-bottom: 20px;
     }
 
-    h1 {
-        float: left;
-    }
-
-    .main {
-        float: left;
-    }
-
-    .sub-section {
-        float: right;
-    }
 
     footer p {
         bottom: -420px;
@@ -46,7 +34,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     h1 {
         margin-bottom: 30px;
         margin-top: 15px;
@@ -73,11 +61,11 @@
         margin: 15px 0;
         background-color: #CCCCCC;
         line-height:40px;
-        padding: 0px;
+        padding: 0;
     }
 
     ul.nav-links {
-        padding: 0px;
+        padding: 0;
     }
 
     div.alert-info {
