@@ -1,18 +1,13 @@
-.jumbotron {
+.hero-pizza {
     background-image: url(../img/pizza.png);
 }
 
-h1 {
-    text-align: center;
-    opacity: .75;
-}
 
 
-.jumbotron>.container {
-    border: 1px solid transparent;
+.hero-pizza-title {
     background-color: white;
     opacity: .75;
-    width: auto;
+    text-align: center;
 }
 
 
