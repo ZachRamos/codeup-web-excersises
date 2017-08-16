@@ -35,17 +35,40 @@ switch (color) {
 }
 
 
-var ryanAmount = (250)
-var cameronAmount = (180)
-var georgeAmount = (320)
+var ryanAmount = (250);
+var cameronAmount = (180);
+var georgeAmount = (320);
+var discountCameron;
+var discountRyan;
+var discountGeorge;
+var minSale = 200;
 
-if (ryanAmount >= 200) {
-    console.log("Ryan had " + ryanAmount + "and paid",ryanAmount * .9 )
-}else if (cameronAmount >= 200) {
-    console.log("Cameron had" + cameronAmount + "and paid", cameronAmount)
-}else if (georgeAmount >= 200) {
-    console.log("George had" + georgeAmount + "and paid",georgeAmount * .9)
+if (cameronAmount > minSale) {
+    discountCameron = .9 * cameronAmount;
+} else {
+    discountCameron = cameronAmount;
 }
+
+if (ryanAmount > minSale) {
+    discountRyan = .9 * ryanAmount;
+} else {
+    discountRyan = ryanAmount;
+}
+
+if (georgeAmount > minSale) {
+    discountGeorge = .9 * georgeAmount;
+} else {
+    discountGeorge = georgeAmount;
+}
+
+
+
+
+
+
+
+
+
 
 var flipACoin = Math.floor(Math.random()* 2)
 
@@ -59,21 +82,46 @@ if (flipACoin === 0) {
 
 var luckyNumber = Math.floor(Math.random()* 6)
 var pay = 60
+var total;
 
 switch (luckyNumber) {
     case "1":
-        console.log(pay * .9);
+        total = .9 * pay;
         break;
     case "2":
-        console.log(pay * .75);
+        total = pay * .75;
         break;
     case "4":
-        console.log(pay * .5);
+        total = pay * .5;
         break;
     case "5":
-        console.log(0);
+        total = 0;
         break;
     default:
-        console.log(pay);
+        total = pay;
         break;
+}
+
+console.log("your total pay is " + total);
+
+
+
+
+var maybe =confirm("Do you want to enter a number?");
+
+if(maybe === true) {
+    var probablyANumber = prompt("Enter a number");
+    if(isNaN(probablyANumber)){
+        alert("That was not a number");
+    } else {
+        if(probablyANumber % 2 === 0){
+            alert("Your number is even");
+        } else {
+            alert("Your number is odd");
+        }
+        alert(probablyANumber + 100);
+        if(probablyANumber > 0) {
+
+        }
+    }
 }
