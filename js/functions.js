@@ -51,12 +51,12 @@
 // 100 and stores it in a variable named random
 var random = Math.floor((Math.random() * 100) + 1);
 
-function isOdd(number){
-    return number +
-
-}
-
-
+// function isOdd(number){
+//     return number +
+//
+// }
+//
+//
 
 
 
