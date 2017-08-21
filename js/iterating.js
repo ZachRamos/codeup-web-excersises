@@ -19,6 +19,13 @@
     });
 
 
+    // var printNames = function (element){
+    //     console.log(element);
+    // }
+    //
+    // names.forEach(printNames);
+
+
 
 
 
