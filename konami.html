@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Konami Code</h1>
+
+
+<script src="js/jquery-2.2.4.min.js"></script>
+
+<script>
+    "use strict";
+
+    var upArrow = 38;
+    var downArrow = 40;
+    var leftArrow = 37;
+    var rightArrow = 39;
+    var bKey = 66;
+    var aKey = 65;
+    var konamiCode = [upArrow, upArrow, downArrow, downArrow, leftArrow, rightArrow, leftArrow, rightArrow, bKey, aKey];
+    var konamiKey = 0;
+
+    $(document).keyup(function(event){
+        if(event.keyCode === konamiCode[konamiKey++]){
+            if(konamiKey === konamiCode.length){
+                konamiKey = 0;
+
+                alert("you have 30 lives");
+
+
+            }
+        } else{
+            konamiKey = 0;
+        }
+
+        console.log(event.keyCode);
+    });
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
