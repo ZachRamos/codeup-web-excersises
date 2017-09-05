@@ -41,6 +41,32 @@
 
 <a href="#" id="link">Answers</a>
 
+<div>
+    <h3>yosemite</h3>
+    <ul class="nationalParks">
+        <li>fact</li>
+        <li>fact</li>
+        <li>fact</li>
+        <li>fact</li>
+    </ul>
+    <h3>yellowstone</h3>
+    <ul class="nationalParks">
+        <li>fact</li>
+        <li>fact</li>
+        <li>fact</li>
+        <li>fact</li>
+    </ul>
+    <h3>Redwood</h3>
+    <ul class="nationalParks">
+        <li>fact</li>
+        <li>fact</li>
+        <li>fact</li>
+        <li>fact</li>
+    </ul>
+
+    <button id="btn">Press</button>
+</div>
+
 
 
 
@@ -63,6 +89,32 @@
         $(this).css("background-color", "rgba(255, 255, 0, 0.54)");
     });
 
+//    $("#btn").click(function(event){
+//        event.preventDefault();
+//        $(".nationalParks").children().last().css("background-color", "yellow");
+//    });
+
+    $("#btn").on("click", highlightAllLastListItem);
+
+    function highlightAllLastListItem(){
+        $("ul").each(highlightLastListItem);
+    }
+
+    function highlightLastListItem(){
+        $(this).children().last().css("background-color", "yellow");
+    }
+
+
+    $("h3").on("click", makeAllListItemsBold);
+
+    function makeAllListItemsBold(){
+        $(this).next().children().css("font-weight", "bold");
+    }
+
+    $("li").on("click", makeFirstSiblingBlue);
+    function makeFirstSiblingBlue(){
+        $(this).parent().children().first().css("color", "blue");
+    }
 
 
 
